@@ -48,6 +48,9 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "stylePreprocessorOptions": {
+                "includePaths": ["app/base"]
+              },
               "budgets": [
                 {
                   "type": "initial",

@@ -1,0 +1,35 @@
+@import "../web-font/web-font-definition.scss";
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin typo-bold() {
+  font-family: $open-sans-bold, $font-family-fallback;
+}
+
+@mixin typo-bold-italic() {
+  font-family: $open-sans-bold-italic, $font-family-fallback;
+}
+
+@mixin typo-light() {
+  font-family: $open-sans-light, $font-family-fallback;
+}
+
+@mixin typo-light-italic() {
+  font-family: $open-sans-light-italic, $font-family-fallback;
+}
+
+@mixin typo-regular() {
+  font-family: $open-sans-regular, $font-family-fallback;
+}
+
+@mixin typo-regular-italic() {
+  font-family: $open-sans-regular-italic, $font-family-fallback;
+}

@@ -5,7 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: 'sg',
     component: HomeComponent
   },
   {
@@ -13,19 +13,14 @@ const routes: Routes = [
     component: ComponentLibraryComponent
   }, 
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
     path: '**',
-    redirectTo: 'home',
+    redirectTo: 'sg',
     pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,0 +1,10 @@
+@import "../../../shared/style/colors/colors.scss";
+
+.logo-header {
+  height: 100px;
+  background-color: $primary-color;
+}
+
+.logo-header__image {
+  height: 100%;
+}

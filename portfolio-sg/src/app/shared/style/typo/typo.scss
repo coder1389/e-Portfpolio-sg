@@ -1,4 +1,4 @@
-@import "../web-font/web-font-definition.scss";
+@import "../../../base/web-font/web-font-definition.scss";
 
 @function calculateRem($size) {
   $remSize: $size / 16px;

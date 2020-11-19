@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ComponentLibraryComponent } from './pages/component-library/component-library.component';
 import { HeaderComponent } from './components/organisms/header/header.component';
+import { LogoHeaderComponent } from './components/molecules/logo-header/logo-header.component';
+import { NavigationComponent } from './components/molecules/navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ComponentLibraryComponent,
-    HeaderComponent
+    HeaderComponent,
+    LogoHeaderComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

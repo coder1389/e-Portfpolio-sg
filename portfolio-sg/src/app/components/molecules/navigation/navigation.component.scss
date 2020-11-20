@@ -1,4 +1,5 @@
 @import "../../../shared/style/typo/typo.scss";
+@import "../../../shared/style/colors/colors.scss";
 @import "../../../shared/style/box-shadow/box-shadow.scss";
 
 .navigation {
@@ -18,4 +19,16 @@
   flex: 1;
   display: flex;
   justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.3s color;
+
+  &:hover {
+    color: $primary-color-dark;
+  }
+
+  &--active {
+    color: $primary-color;
+  }
 }

@@ -9,18 +9,22 @@ export class NavigationComponent {
   anchors = [
     {
       description: "Willkommen",
+      icon: "home",
       anchor: "home"
     },
     {
       description: "Themenbeschreibung",
+      icon: "article",
       anchor: "topic"
     },
     {
       description: "Impressionen",
+      icon: "visibility",
       anchor: "impressions"
     },
     {
       description: "Über mich",
+      icon: "perm",
       anchor: "about"
     }
   ]

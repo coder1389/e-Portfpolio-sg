@@ -10,6 +10,7 @@ import { LogoHeaderComponent } from './components/molecules/logo-header/logo-hea
 import { NavigationComponent } from './components/molecules/navigation/navigation.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { IconComponent } from './components/atoms/icon/icon.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { IconComponent } from './components/atoms/icon/icon.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularSvgIconModule.forRoot()
   ],
   providers: [],

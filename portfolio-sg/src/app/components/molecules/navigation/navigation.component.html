@@ -6,7 +6,9 @@
       routerLink="anchor"
       routerLinkActive="navigation-item--active"
     >
-      <div class="navgiation-item__icon"></div>
+      <div class="navgiation-item__icon">
+        <sg-icon [name]="anchor.icon"></sg-icon>
+      </div>
       <span class="navigation-item__text"> {{ anchor.description }}</span>
     </div>
   </section>

@@ -19,16 +19,30 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   cursor: pointer;
+  height: 100%;
 
   transition: 0.3s color;
 
   &:hover {
     color: $primary-color-dark;
+
+    ::ng-deep svg-icon {
+      fill: $primary-color-dark;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $primary-color;
   }
 
   &--active {
     color: $primary-color;
+
+    ::ng-deep svg-icon {
+      fill: $primary-color;
+    }
   }
 }

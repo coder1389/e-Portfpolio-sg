@@ -1,6 +1,7 @@
 @import "../../../shared/style/typo/typo.scss";
 @import "../../../shared/style/colors/colors.scss";
 @import "../../../shared/style/box-shadow/box-shadow.scss";
+@import "../../../shared/style/spacing/spacing.scss";
 
 .navigation {
   box-shadow: $box-shadow;
@@ -45,4 +46,8 @@
       fill: $primary-color;
     }
   }
+}
+
+.navgiation-item__icon {
+  margin-right: $space-base;
 }

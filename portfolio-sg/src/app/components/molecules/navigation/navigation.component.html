@@ -1,7 +1,13 @@
 <nav class="navigation">
-  <div class="navigation-items">
-    <div class="navigation-item" *ngFor="let anchor of anchors">
-      {{ anchor.description }}
+  <section class="navigation-items">
+    <div
+      class="navigation-item"
+      *ngFor="let anchor of anchors"
+      routerLink="anchor"
+      routerLinkActive="navigation-item--active"
+    >
+      <div class="navgiation-item__icon"></div>
+      <span class="navigation-item__text"> {{ anchor.description }}</span>
     </div>
-  </div>
+  </section>
 </nav>

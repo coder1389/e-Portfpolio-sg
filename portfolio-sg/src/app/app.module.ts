@@ -8,6 +8,7 @@ import { ComponentLibraryComponent } from './pages/component-library/component-l
 import { HeaderComponent } from './components/organisms/header/header.component';
 import { LogoHeaderComponent } from './components/molecules/logo-header/logo-header.component';
 import { NavigationComponent } from './components/molecules/navigation/navigation.component';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavigationComponent } from './components/molecules/navigation/navigatio
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularSvgIconModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

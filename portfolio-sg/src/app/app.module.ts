@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/organisms/header/header.component'
 import { LogoHeaderComponent } from './components/molecules/logo-header/logo-header.component';
 import { NavigationComponent } from './components/molecules/navigation/navigation.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { IconComponent } from './components/atoms/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
     ComponentLibraryComponent,
     HeaderComponent,
     LogoHeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,

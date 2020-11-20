@@ -1,0 +1,21 @@
+@import "../../../shared/style/typo/typo.scss";
+@import "../../../shared/style/box-shadow/box-shadow.scss";
+
+.navigation {
+  box-shadow: $box-shadow;
+}
+
+.navigation-items {
+  align-items: center;
+  display: flex;
+  height: 50px;
+}
+
+.navigation-item {
+  @include typo-regular();
+  @include fontSize(18px);
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}

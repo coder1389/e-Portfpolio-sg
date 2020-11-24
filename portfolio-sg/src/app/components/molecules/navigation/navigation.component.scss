@@ -3,6 +3,15 @@
 @import "../../../shared/style/box-shadow/box-shadow.scss";
 @import "../../../shared/style/spacing/spacing.scss";
 
+:host {
+  display: block;
+
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .navigation {
   box-shadow: $box-shadow;
 }

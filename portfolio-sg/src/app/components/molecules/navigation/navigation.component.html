@@ -1,15 +1,15 @@
 <nav class="navigation">
   <section class="navigation-items">
-    <div
+    <a
       class="navigation-item"
       *ngFor="let anchor of anchors"
-      routerLink="anchor"
-      routerLinkActive="navigation-item--active"
+      routerLink=""
+      fragment="{{ anchor.anchor }}"
     >
       <div class="navgiation-item__icon">
         <sg-icon [name]="anchor.icon"></sg-icon>
       </div>
       <span class="navigation-item__text"> {{ anchor.description }}</span>
-    </div>
+    </a>
   </section>
 </nav>

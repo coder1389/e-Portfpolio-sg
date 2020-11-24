@@ -11,6 +11,7 @@ import { NavigationComponent } from './components/molecules/navigation/navigatio
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { IconComponent } from './components/atoms/icon/icon.component';
 import { HttpClientModule } from '@angular/common/http';
+import { WelcomeComponent } from './components/organisms/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     LogoHeaderComponent,
     NavigationComponent,
-    IconComponent
+    IconComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

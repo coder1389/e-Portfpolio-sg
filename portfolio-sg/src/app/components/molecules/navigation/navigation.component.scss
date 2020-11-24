@@ -23,7 +23,9 @@
   align-items: center;
 
   cursor: pointer;
+  color: $black;
   height: 100%;
+  text-decoration: none;
 
   transition: 0.3s color;
 
@@ -32,18 +34,6 @@
 
     ::ng-deep svg-icon {
       fill: $primary-color-dark;
-    }
-  }
-
-  &:focus {
-    border: 1px solid $primary-color;
-  }
-
-  &--active {
-    color: $primary-color;
-
-    ::ng-deep svg-icon {
-      fill: $primary-color;
     }
   }
 }

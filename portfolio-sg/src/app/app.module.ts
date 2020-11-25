@@ -13,6 +13,8 @@ import { IconComponent } from './components/atoms/icon/icon.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WelcomeComponent } from './components/organisms/welcome/welcome.component';
 import { TopicDescriptionComponent } from './components/organisms/topic-description/topic-description.component';
+import { ImpressionsComponent } from './components/organisms/impressions/impressions.component';
+import { AboutComponent } from './components/organisms/about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { TopicDescriptionComponent } from './components/organisms/topic-descript
     NavigationComponent,
     IconComponent,
     WelcomeComponent,
-    TopicDescriptionComponent
+    TopicDescriptionComponent,
+    ImpressionsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

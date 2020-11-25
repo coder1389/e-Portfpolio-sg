@@ -1,4 +1,13 @@
 @import "../../../shared/style/comps/card.scss";
-:host {
+@import "../../../shared/style/comps/title.scss";
+.title {
+  @include title;
+}
+
+.card {
   @include card;
+}
+
+.card-header__title {
+  @include sub-title;
 }

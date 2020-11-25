@@ -1,0 +1,17 @@
+@import "../spacing/spacing.scss";
+@import "../colors/colors.scss";
+@import "../typo/typo.scss";
+
+@mixin title {
+  @include typo-bold;
+  @include fontSize(36px);
+  color: $primary-color;
+  padding: $space-large 0;
+}
+
+@mixin sub-title {
+  @include typo-bold;
+  @include fontSize(30px);
+  color: $primary-color;
+  padding: $space-medium 0;
+}

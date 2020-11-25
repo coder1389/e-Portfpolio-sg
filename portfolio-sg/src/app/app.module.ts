@@ -12,6 +12,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { IconComponent } from './components/atoms/icon/icon.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WelcomeComponent } from './components/organisms/welcome/welcome.component';
+import { TopicDescriptionComponent } from './components/organisms/topic-description/topic-description.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { WelcomeComponent } from './components/organisms/welcome/welcome.compone
     LogoHeaderComponent,
     NavigationComponent,
     IconComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    TopicDescriptionComponent
   ],
   imports: [
     BrowserModule,

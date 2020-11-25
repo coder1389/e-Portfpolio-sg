@@ -1,0 +1,4 @@
+@import "../../../shared/style/comps/card.scss";
+:host {
+  @include card;
+}

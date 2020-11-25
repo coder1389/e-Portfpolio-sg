@@ -1,0 +1,9 @@
+@import "../spacing/spacing.scss";
+@import "../colors/colors.scss";
+@import "../box-shadow/box-shadow.scss";
+
+@mixin card {
+  background-color: $white;
+  padding: $space-large;
+  box-shadow: $box-shadow;
+}

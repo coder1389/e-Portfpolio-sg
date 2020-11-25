@@ -1,2 +1,9 @@
+@import "../colors/colors.scss";
+@import "../typo/typo.scss";
+
 @mixin rich-text {
+  @include typo-regular;
+  @include fontSize(24px);
+
+  color: $primary-color;
 }

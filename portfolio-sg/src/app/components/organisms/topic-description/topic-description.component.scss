@@ -1,5 +1,6 @@
 @import "../../../shared/style/comps/card.scss";
 @import "../../../shared/style/comps/title.scss";
+@import "../../../shared/style/comps/rich-text.scss";
 .title {
   @include title;
 }
@@ -10,4 +11,8 @@
 
 .card-header__title {
   @include sub-title;
+}
+
+.card-body__text {
+  @include rich-text;
 }

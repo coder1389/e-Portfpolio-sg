@@ -11,15 +11,20 @@
   grid-column: 1 / 13;
 
   position: relative;
-  height: 90vh;
+
+  padding: $space-large 0;
 }
 
-.welcome-wrapper__image {
+.welcome-image-wrapper {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.welcome-image {
   width: 100%;
-  max-height: 100%;
 }
 
-.welcome-wrapper__text {
+.welcome-text {
   position: absolute;
   top: auto;
   bottom: auto;

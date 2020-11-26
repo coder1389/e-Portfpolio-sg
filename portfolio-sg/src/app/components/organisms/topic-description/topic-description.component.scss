@@ -6,7 +6,7 @@
 }
 
 .card {
-  @include card;
+  @include card(0);
 }
 
 .card-header__title {

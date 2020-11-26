@@ -15,6 +15,8 @@ import { WelcomeComponent } from './components/organisms/welcome/welcome.compone
 import { TopicDescriptionComponent } from './components/organisms/topic-description/topic-description.component';
 import { ImpressionsComponent } from './components/organisms/impressions/impressions.component';
 import { AboutComponent } from './components/organisms/about/about.component';
+import { InViewportDirective } from './shared/directives/in-viewport.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,15 +30,17 @@ import { AboutComponent } from './components/organisms/about/about.component';
     WelcomeComponent,
     TopicDescriptionComponent,
     ImpressionsComponent,
-    AboutComponent
+    AboutComponent,
+    InViewportDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularSvgIconModule.forRoot()
+    AngularSvgIconModule.forRoot(),
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

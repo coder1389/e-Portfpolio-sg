@@ -6,6 +6,8 @@ main {
   background-color: $page-background;
 }
 
-sg-topic-description {
+sg-topic-description,
+sg-impressions,
+sg-about {
   grid-column: 2 / 12;
 }

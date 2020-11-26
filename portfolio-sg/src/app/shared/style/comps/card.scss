@@ -1,11 +1,10 @@
 @import "../spacing/spacing.scss";
 @import "../colors/colors.scss";
 @import "../box-shadow/box-shadow.scss";
-
 @mixin card($opacity: 1) {
-  background-color: $white;
-  height: auto;
-  width: 100%;
-  padding: $space-large;
-  opacity: $opacity;
+    background-color: $white;
+    height: auto;
+    width: 100%;
+    padding: $space-large;
+    opacity: $opacity;
 }

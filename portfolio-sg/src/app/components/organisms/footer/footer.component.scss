@@ -29,3 +29,7 @@ $footer-height: 100px;
     @include typo-bold;
     color: $primary-color;
 }
+
+.link:not(:last-child) {
+    margin-right: 10px;
+}

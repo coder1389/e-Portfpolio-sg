@@ -11,12 +11,12 @@ export class FooterComponent implements OnInit {
   readonly externalLinks = [
     {
       name: 'GitHub',
-      link: '',
+      link: 'https://github.com/coder1389',
       icon: 'github',
     },
     {
       name: 'Facebook',
-      link: '',
+      link: 'https://www.facebook.com/danijel.malinovic.10/',
       icon: 'facebook',
     },
   ];

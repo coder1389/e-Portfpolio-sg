@@ -6,7 +6,7 @@
     </section>
     <section class="footer-container">
         <div class="alternate-links">
-            <a *ngFor="let externalLink of externalLinks" [href]="externalLink.link" class="link">
+            <a *ngFor="let externalLink of externalLinks" class="link" [href]="externalLink.link" target="blank">
                 <sg-icon [name]="externalLink.icon"></sg-icon>
             </a>
         </div>

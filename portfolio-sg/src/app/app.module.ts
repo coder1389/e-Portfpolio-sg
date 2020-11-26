@@ -18,6 +18,7 @@ import { ImpressionsComponent } from './components/organisms/impressions/impress
 import { AboutComponent } from './components/organisms/about/about.component';
 import { InViewportDirective } from './shared/directives/in-viewport.directive';
 import { FooterComponent } from './components/organisms/footer/footer.component';
+import { BackToTopComponent } from './components/molecules/back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FooterComponent } from './components/organisms/footer/footer.component'
     AboutComponent,
     InViewportDirective,
     FooterComponent,
+    BackToTopComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,15 @@
 @import "../../shared/style/colors/colors.scss";
+@import "../../shared/style/spacing/spacing.scss";
 
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-color: $page-background;
+  padding: $space-large 0;
+}
+
+sg-welcome {
+  grid-column: 1 / 13;
 }
 
 sg-topic-description,

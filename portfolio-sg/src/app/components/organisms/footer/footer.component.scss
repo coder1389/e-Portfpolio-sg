@@ -1,0 +1,21 @@
+@import "../../../shared/style/colors/colors.scss";
+@import "../../../shared/style/spacing/spacing.scss";
+@import "../../../shared/style/typo/typo.scss";
+
+$footer-height: 100px;
+
+:host {
+  background-color: $white;
+  align-items: center;
+  display: flex;
+  height: $footer-height;
+  width: 100%;
+  padding: 0 $space-large;
+}
+
+.copy-right {
+  @include fontSize(28px);
+  @include typo-bold;
+
+  color: $primary-color;
+}

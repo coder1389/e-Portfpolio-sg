@@ -17,6 +17,7 @@ import { TopicDescriptionComponent } from './components/organisms/topic-descript
 import { ImpressionsComponent } from './components/organisms/impressions/impressions.component';
 import { AboutComponent } from './components/organisms/about/about.component';
 import { InViewportDirective } from './shared/directives/in-viewport.directive';
+import { FooterComponent } from './components/organisms/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { InViewportDirective } from './shared/directives/in-viewport.directive';
     ImpressionsComponent,
     AboutComponent,
     InViewportDirective,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

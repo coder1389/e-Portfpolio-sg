@@ -1,13 +1,14 @@
 <footer class="footer">
-  <section class="footer-container">
-    <span class="copy-right"
-      >&copy; {{ yearIndication }} Danijel Malinovic</span
-    >
-  </section>
-  <section class="footer-container">
-    <div class="alternate-links">
-      <a href="" class="link"> </a>
-      <a href="" class="link"></a>
-    </div>
-  </section>
+    <section class="footer-container">
+        <span class="copy-right">
+          &copy; {{ yearIndication }} Danijel Malinovic
+          </span>
+    </section>
+    <section class="footer-container">
+        <div class="alternate-links">
+            <a *ngFor="let externalLink of externalLinks" [href]="externalLink.link" class="link">
+                <sg-icon [name]="externalLink.icon"></sg-icon>
+            </a>
+        </div>
+    </section>
 </footer>

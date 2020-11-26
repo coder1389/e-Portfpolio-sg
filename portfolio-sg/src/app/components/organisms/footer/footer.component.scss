@@ -1,21 +1,31 @@
 @import "../../../shared/style/colors/colors.scss";
 @import "../../../shared/style/spacing/spacing.scss";
 @import "../../../shared/style/typo/typo.scss";
-
 $footer-height: 100px;
-
 :host {
-  background-color: $white;
-  align-items: center;
-  display: flex;
-  height: $footer-height;
-  width: 100%;
-  padding: 0 $space-large;
+    background-color: $white;
+    align-items: center;
+    display: flex;
+    height: $footer-height;
+    width: 100%;
+    padding: 0 $space-large;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    .footer-container {
+        flex: 1;
+    }
+}
+
+.alternate-links {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .copy-right {
-  @include fontSize(28px);
-  @include typo-bold;
-
-  color: $primary-color;
+    @include fontSize(28px);
+    @include typo-bold;
+    color: $primary-color;
 }

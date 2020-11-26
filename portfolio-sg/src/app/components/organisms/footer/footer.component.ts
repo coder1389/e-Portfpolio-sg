@@ -8,6 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   yearIndication: string;
 
+  readonly externalLinks = [
+    {
+      name: 'GitHub',
+      link: '',
+      icon: 'github',
+    },
+    {
+      name: 'Facebook',
+      link: '',
+      icon: 'facebook',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {

@@ -1,6 +1,11 @@
 @import "../../shared/style/colors/colors.scss";
 @import "../../shared/style/spacing/spacing.scss";
 
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

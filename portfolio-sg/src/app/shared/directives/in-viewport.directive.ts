@@ -1,4 +1,3 @@
-import { ifStmt } from '@angular/compiler/src/output/output_ast';
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
@@ -20,8 +19,6 @@ export class InViewportDirective {
       rect.bottom <=
         (window.innerHeight || document.documentElement.clientHeight)
     ) {
-      console.log('bla');
-
       this.isAlreadyInViewPort = true;
 
       nativeElement.animate(

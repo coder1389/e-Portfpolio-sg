@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +17,6 @@ import { TopicDescriptionComponent } from './components/organisms/topic-descript
 import { ImpressionsComponent } from './components/organisms/impressions/impressions.component';
 import { AboutComponent } from './components/organisms/about/about.component';
 import { InViewportDirective } from './shared/directives/in-viewport.directive';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [

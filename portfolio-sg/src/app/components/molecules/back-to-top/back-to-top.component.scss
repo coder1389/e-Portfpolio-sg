@@ -1,0 +1,25 @@
+@import '../../../shared/style/spacing/spacing.scss';
+@import '../../../shared/style/colors/colors.scss';
+@import '../../../shared/style/box-shadow/box-shadow.scss';
+:host {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: $space-super-large-desktop;
+    right: $space-super-large-desktop;
+    height: 50px;
+    width: 50px;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    &.show {
+        display: flex;
+    }
+}
+
+ :ng-deep sg-icon {
+    .svg-icon {
+        fill: $primary-color-dark;
+    }
+}

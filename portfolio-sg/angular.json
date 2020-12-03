@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -49,7 +50,9 @@
               "vendorChunk": false,
               "buildOptimizer": true,
               "stylePreprocessorOptions": {
-                "includePaths": ["app/base"]
+                "includePaths": [
+                  "app/base"
+                ]
               },
               "budgets": [
                 {
@@ -95,6 +98,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -126,6 +130,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "portfolio-sg"
 }

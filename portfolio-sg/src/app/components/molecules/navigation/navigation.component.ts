@@ -18,7 +18,7 @@ export class NavigationComponent {
       anchor: "topic"
     },
     {
-      description: "Impressionen",
+      description: "Eindrücke",
       icon: "visibility",
       anchor: "impressions"
     },

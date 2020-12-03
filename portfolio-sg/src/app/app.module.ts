@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { AboutComponent } from './components/organisms/about/about.component';
 import { InViewportDirective } from './shared/directives/in-viewport.directive';
 import { FooterComponent } from './components/organisms/footer/footer.component';
 import { BackToTopComponent } from './components/molecules/back-to-top/back-to-top.component';
+import { ImageSliderComponent } from './components/molecules/image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { BackToTopComponent } from './components/molecules/back-to-top/back-to-t
     InViewportDirective,
     FooterComponent,
     BackToTopComponent,
+    ImageSliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { BackToTopComponent } from './components/molecules/back-to-top/back-to-t
     HttpClientModule,
     AngularSvgIconModule.forRoot(),
     BrowserAnimationsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent],

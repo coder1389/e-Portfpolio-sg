@@ -1,2 +1,5 @@
 @import "src/app/base/web-font/web-font.scss";
 @import "src/app/base/reset/reset.scss";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

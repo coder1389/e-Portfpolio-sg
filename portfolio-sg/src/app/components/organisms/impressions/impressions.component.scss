@@ -1,0 +1,31 @@
+@import "../../../shared/style/comps/card.scss";
+@import "../../../shared/style/comps/title.scss";
+@import "../../../shared/style/comps/rich-text.scss";
+.title {
+    @include title;
+}
+
+.card {
+    @include card(0);
+}
+
+.card-header__title {
+    @include sub-title;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+}
+
+.card-body__image {
+    flex: 1 1 300px;
+    .image {
+        height: 300px;
+    }
+}
+
+.card-body__text {
+    @include rich-text;
+    flex: 2 2 auto;
+}

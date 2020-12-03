@@ -29,6 +29,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       el.scrollIntoView({
         behavior: 'smooth',
       });
+    } else {
+      console.error(`No element defined for fragment: ${fragment}`)
     }
   }
 }

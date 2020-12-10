@@ -7,4 +7,7 @@
     width: 100%;
     padding: $space-large;
     opacity: $opacity;
+    &:not(:last-child) {
+        margin-bottom: $space-large;
+    }
 }

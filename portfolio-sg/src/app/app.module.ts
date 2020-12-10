@@ -20,7 +20,6 @@ import { AboutComponent } from './components/organisms/about/about.component';
 import { InViewportDirective } from './shared/directives/in-viewport.directive';
 import { FooterComponent } from './components/organisms/footer/footer.component';
 import { BackToTopComponent } from './components/molecules/back-to-top/back-to-top.component';
-import { ImageSliderComponent } from './components/molecules/image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +36,7 @@ import { ImageSliderComponent } from './components/molecules/image-slider/image-
     AboutComponent,
     InViewportDirective,
     FooterComponent,
-    BackToTopComponent,
-    ImageSliderComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule,

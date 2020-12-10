@@ -2,47 +2,47 @@
 @import "../../../shared/style/colors/colors.scss";
 @import "../../../shared/style/box-shadow/box-shadow.scss";
 @import "../../../shared/style/spacing/spacing.scss";
-
+@import "../../../base/break-points/break-points.scss";
 :host {
-  display: block;
-  background-color: $white;
+    display: block;
+    background-color: $white;
 }
 
 .navigation {
-  box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
 }
 
 .navigation-items {
-  align-items: center;
-  display: flex;
-  height: 50px;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    @media screen and (max-width: $mq-size-m) {
+        flex-direction: column;
+        height: auto;
+        display: none;
+    }
 }
 
 .navigation-item {
-  @include typo-regular();
-  @include fontSize(18px);
-
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  cursor: pointer;
-  color: $black;
-  height: 100%;
-  text-decoration: none;
-
-  transition: 0.3s color;
-
-  &:hover {
-    color: $primary-color-dark;
-
-    ::ng-deep svg-icon {
-      fill: $primary-color-dark;
+    @include typo-regular();
+    @include fontSize(18px);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: $black;
+    height: 100%;
+    text-decoration: none;
+    transition: 0.3s color;
+    &:hover {
+        color: $primary-color-dark;
+         ::ng-deep svg-icon {
+            fill: $primary-color-dark;
+        }
     }
-  }
 }
 
 .navgiation-item__icon {
-  margin-right: $space-base;
+    margin-right: $space-base;
 }

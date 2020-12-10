@@ -1,17 +1,20 @@
 @import "../spacing/spacing.scss";
 @import "../colors/colors.scss";
 @import "../typo/typo.scss";
-
+@import "../../../base/break-points/break-points.scss";
 @mixin title {
-  @include typo-bold;
-  @include fontSize(36px);
-  color: $primary-color;
-  padding: $space-large 0;
+    @include typo-bold;
+    @include fontSize(36px);
+    color: $primary-color;
+    padding: $space-large 0;
+    @media screen and (max-width: $mq-size-m) {
+        padding: $space-large;
+    }
 }
 
 @mixin sub-title {
-  @include typo-bold;
-  @include fontSize(28px);
-  color: $primary-color;
-  padding-bottom: $space-medium;
+    @include typo-bold;
+    @include fontSize(28px);
+    color: $primary-color;
+    padding-bottom: $space-medium;
 }

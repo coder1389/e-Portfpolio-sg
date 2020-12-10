@@ -1,6 +1,7 @@
 @import "../../../shared/style/comps/card.scss";
 @import "../../../shared/style/comps/title.scss";
 @import "../../../shared/style/comps/rich-text.scss";
+@import "../../../base/break-points/break-points.scss";
 .title {
     @include title;
 }
@@ -23,6 +24,15 @@
             width: 500px;
             &:not(:last-child) {
                 margin-right: 10px;
+            }
+        }
+        @media screen and (max-width: $mq-size-m) {
+            flex-direction: column;
+            .card-body__image-container__image {
+                width: 100%;
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
             }
         }
     }

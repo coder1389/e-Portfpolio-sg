@@ -16,7 +16,7 @@ export class InViewportDirective {
     if (
       !this.isAlreadyInViewPort &&
       rect.top >= 0 &&
-      rect.bottom <=
+      rect.top <=
         (window.innerHeight || document.documentElement.clientHeight)
     ) {
       this.isAlreadyInViewPort = true;

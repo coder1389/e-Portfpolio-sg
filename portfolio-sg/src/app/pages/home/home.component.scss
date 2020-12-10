@@ -1,24 +1,27 @@
 @import "../../shared/style/colors/colors.scss";
 @import "../../shared/style/spacing/spacing.scss";
-
+@import "../../base/break-points/break-points.scss";
 :host {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  background-color: $page-background;
-  padding: $space-large 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: $page-background;
+    padding: $space-large 0;
 }
 
 sg-welcome {
-  grid-column: 1 / 13;
+    grid-column: 1 / 13;
 }
 
 sg-topic-description,
 sg-impressions,
 sg-about {
-  grid-column: 2 / 12;
+    grid-column: 2 / 12;
+    @media screen and (max-width: $mq-size-m) {
+        grid-column: 1 / 13;
+    }
 }

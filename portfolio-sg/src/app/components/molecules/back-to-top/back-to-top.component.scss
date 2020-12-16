@@ -1,6 +1,7 @@
 @import '../../../shared/style/spacing/spacing.scss';
 @import '../../../shared/style/colors/colors.scss';
 @import '../../../shared/style/box-shadow/box-shadow.scss';
+@import '../../../base/break-points/break-points.scss';
 :host {
     display: none;
     justify-content: center;
@@ -13,6 +14,10 @@
     width: 50px;
     background-color: $white;
     box-shadow: $box-shadow;
+    @media screen and (max-width: $mq-size-m) {
+        bottom: $space-large;
+        right: $space-large;
+    }
     &.show {
         display: flex;
     }

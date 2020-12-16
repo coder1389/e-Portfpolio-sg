@@ -1,7 +1,7 @@
-@import "../spacing/spacing.scss";
-@import "../colors/colors.scss";
-@import "../typo/typo.scss";
-@import "../../../base/break-points/break-points.scss";
+@import "src/app/shared/style/spacing/spacing.scss";
+@import "src/app/shared/style/colors/colors.scss";
+@import "src/app/shared/style/typo/typo.scss";
+@import "src/app/base/break-points/break-points.scss";
 @mixin title {
     @include typo-bold;
     @include fontSize(36px);
@@ -9,6 +9,7 @@
     padding: $space-large 0;
     @media screen and (max-width: $mq-size-m) {
         padding: $space-large;
+        @include fontSize(28px);
     }
 }
 

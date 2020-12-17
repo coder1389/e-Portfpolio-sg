@@ -8,6 +8,11 @@
 
 .card {
     @include card(0);
+    &:last-child {
+        .card-body {
+            display: block;
+        }
+    }
 }
 
 .card-header__title {
@@ -24,13 +29,15 @@
             flex-direction: column;
             .card-body__image-container__image {
                 width: 100%;
+                height: auto;
                 &:not(:last-child) {
                     margin-bottom: 10px;
                 }
             }
         }
         .card-body__image-container__image {
-            width: 30vw;
+            width: 50%;
+            max-height: 100%;
             &:not(:last-child) {
                 margin-right: 10px;
             }
@@ -45,4 +52,19 @@
             }
         }
     }
+}
+
+.card-body__video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+}
+
+.card-body__video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
